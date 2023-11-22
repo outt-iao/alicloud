@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>跳转到百度</title>
+  <style>
+    /* 全局样式 */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #d1d1e1; /* 设置背景为浅灰色 */
+    }
+    /* 导航栏样式 */
+    .navbar {
+      background-color: #333;
+      color: white;
+      padding: 25px; /* 增加导航栏大小 */
+      text-align: center;
+	  border-radius: 50px; /* 设置导航栏圆角为10像素 */
+    }
+    /* 链接样式 */
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 30px; /* 增加链接之间的间距 */
+      display: inline-block;
+      padding: 60px 30px; /* 调整每个链接的 padding 以增大可点击区域 */
+      transition: color 0.3s, transform 0.3s; /* 添加颜色和大小变化的过渡效果 */
+    }
+
+    /* 鼠标悬停样式 */
+    .navbar a:hover {
+      color: #ffcc00; /* 鼠标悬停时颜色变化 */
+      transform: scale(1.1); /* 鼠标悬停时大小变化 */
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="http://120.76.41.136/">首页</a>
+    <a href="http://120.76.41.136:9000">9000</a>
+    <a href="http://120.76.41.136:5244">5244</a>
+    <a href="http://120.76.41.136:3888">3888</a>
+  </div>
+
+  <script>
+    // 五秒后跳转到百度
+    setTimeout(function() {
+      window.location.href = 'http://120.76.41.136/';
+    }, 5000);
+  </script>
+</body>
+</html>
